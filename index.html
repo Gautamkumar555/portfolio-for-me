@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0e0e0e;
+            color: #ffffff;
+            line-height: 1.6;
+            perspective: 1000px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+            margin-bottom: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header h1:hover {
+            color: #61dafb;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #61dafb;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #61dafb;
+            color: #0e0e0e;
+            border-radius: 5px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transform: rotateY(10deg);
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: rotateY(0deg);
+        }
+
+        .project-list {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+            margin: 10px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #222;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        footer p {
+            color: #61dafb;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 20%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .project-card, .skill {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-card, .skill {
+                width: 90%;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="fade-in">
+            <h1>Ethical Hacking Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about" class="card fade-in">
+            <h2>About Me</h2>
+            <p>I am Gautam Kumar an ethical hacker with a passion for cybersecurity. My goal is to identify vulnerabilities in systems and help organizations strengthen their defenses.</p>
+            <p>With experience in penetration testing, vulnerability assessment, and secure coding practices, I aim to contribute to a safer digital world.</p>
+        </section>
+
+        <section id="skills" class="card fade-in">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">Pentesting</div>
+                <div class="skill">Network Security</div>
+                <div class="skill">Web Application Security</div>
+                <div class="skill">Malware Analysis</div>
+                <div class="skill">Social Engineering</div>
+                <div class="skill">Risk Assessment</div>
+                <div class="skill">Incident Response</div>
+                <div class="skill">recovering system</div>
+            </div>
+        </section>
+
+        <section id="projects" class="card fade-in">
+            <h2>Projects</h2>
+            <p>Check out some of my projects below:</p>
+            <div class="project-list">
+                <div class="project-card">Project 1: Web App Penetration Test<br><small>Identified vulnerabilities in a major web application.</small></div>
+                <div class="project-card">Project 2: Network Security Assessment<br><small>Conducted assessments network defenses.</small></div>
+                <div class="project-card">Project 3: Malware Analysis Report<br><small>Analyzed malware samples to understand attack vectors.</small></div>
+                <div class="project-card">Project 4: Social Engineering Test<br><small>Executed a successful social engineering campaign.</small></div>
+                <div class="project-card">Project 5: Security Awareness Training<br><small>Developed training modules for employees on security best practices.</small></div>
+            </div>
+        </section>
+
+        <section id="contact" class="card fade-in">
+            <h2>Contact Me</h2>
+            <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
+            <p>Email: <a href="mailto:gk772269@gmail.com" style="color: #61dafb;">email me</a></p>
+          
+            <p>GitHub: <a href="https://github.com/gautamkumar555" style="color: #61dafb;">My GitHub Profile</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Ethical Hacker Portfolio</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add any interactive JavaScript functionality here
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Ethical Hacking Portfolio Loaded");
+        });
+    </script>
+</body>
+</html>
